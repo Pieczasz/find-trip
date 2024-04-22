@@ -1,14 +1,11 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const inter = Inter({ subsets: ['latin'] });
-
 export const metadata: Metadata = {
 	title: 'Find best trip for you',
-	description: 'Your personall trip planner',
+	description: 'Your personal trip planner',
 };
 
 export default function RootLayout({
@@ -18,7 +15,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body className="font-poppins">
 				<Header />
 				{children}
 				<Footer />
