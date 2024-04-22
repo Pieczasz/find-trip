@@ -4,7 +4,7 @@ import { Label } from './ui/label';
 
 const Inputs = () => {
 	return (
-		<div className="flex gap-1 pb-10 justify-center items-center">
+		<div className="flex gap-1 pb-10 w-full flex-wrap">
 			<Input type="text" className="w-30" id="fromWhere" />
 			<Input type="text" className="w-30" id="howManyCountries" />
 			<Input type="text" className="w-30" id="depart" />

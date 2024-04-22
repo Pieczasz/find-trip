@@ -40,7 +40,7 @@ const Footer = () => {
 				</div>
 				<div>
 					<Accordion type="single" collapsible>
-						<AccordionItem value="item-1">
+						<AccordionItem value="item-1" className="border-b-0">
 							<AccordionTrigger>Company</AccordionTrigger>
 							<AccordionContent>About us</AccordionContent>
 							<AccordionContent>Why FindTrip</AccordionContent>
@@ -52,18 +52,26 @@ const Footer = () => {
 							<AccordionContent>Security</AccordionContent>
 							<AccordionContent>How FindTrip works</AccordionContent>
 						</AccordionItem>
-						<AccordionItem value="item-2">
+						<AccordionItem value="item-2" className="border-b-0">
 							<AccordionTrigger>Partners</AccordionTrigger>
 							<AccordionContent>{/* text */}</AccordionContent>
 						</AccordionItem>
-						<AccordionItem value="item-3">
+						<AccordionItem value="item-3" className="border-b-0">
 							<AccordionTrigger>International sites</AccordionTrigger>
 							<AccordionContent>{/* text */}</AccordionContent>
 						</AccordionItem>
 					</Accordion>
 				</div>
 			</div>
-			<div></div>
+			<div>
+				<p className="text-center">
+					Find your trip and book cheap flights with FindTrip
+				</p>
+				<br />
+				<p className="text-center">
+					&copy; 2025 FindTrip. All rights reserved.
+				</p>
+			</div>
 		</footer>
 	);
 };
