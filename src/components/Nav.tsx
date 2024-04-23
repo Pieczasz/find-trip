@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { MdOutlineAccountCircle } from 'react-icons/md';
 import { HiOutlineViewList } from 'react-icons/hi';
 import { FaRegFlag, FaRegHeart } from 'react-icons/fa';
+import { FaEarthEurope } from 'react-icons/fa6';
 
 const Nav = () => {
 	return (
@@ -20,11 +21,19 @@ const Nav = () => {
 					/>
 				</Link>
 			</div>
-			<div className="flex gap-4 items-center p-6">
-				<FaRegFlag className="icon" />
-				<FaRegHeart className="icon" />
-				<MdOutlineAccountCircle className="icon" />
-				<HiOutlineViewList className="icon" />
+			<div className="flex gap-1 items-center p-6">
+				<div className="divIcon">
+					<FaEarthEurope className="icon" />
+				</div>
+				<div className="divIcon">
+					<FaRegHeart className="icon" />
+				</div>
+				<div className="divIcon">
+					<MdOutlineAccountCircle className="icon" />
+				</div>
+				<div className="divIcon">
+					<HiOutlineViewList className="icon" />
+				</div>
 			</div>
 		</nav>
 	);

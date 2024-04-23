@@ -1,6 +1,6 @@
 //components
 import MaxWidthWrapper from './MaxWidthWrapper';
-import Settings from './Settings';
+import Settings from './RegionalSettings';
 import {
 	Accordion,
 	AccordionContent,

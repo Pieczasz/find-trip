@@ -8,7 +8,7 @@ const Explore = () => {
 			<a href="/">
 				<div className="relative">
 					<Image
-						src="/old-bagan.jpg"
+						src="/explore/old-bagan.jpg"
 						alt="explore 5 random countries"
 						width={2000}
 						height={500}
@@ -19,7 +19,7 @@ const Explore = () => {
 							Can&apos;t decide where to go?
 						</p>
 						<h2 className="text-5xl font-bold pb-10">
-							Explore 5 random countries
+							Explore five random countries
 						</h2>
 						<Button
 							variant="outline"

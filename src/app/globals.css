@@ -57,8 +57,14 @@
 	body {
 		@apply bg-background text-foreground;
 	}
+	.bg-custom-gray {
+		background-color: rgb(98, 105, 113);
+	}
 }
 
 .icon {
 	@apply w-6 h-6 cursor-pointer;
+}
+.divIcon {
+	@apply w-10 h-10 flex justify-center items-center cursor-pointer hover:bg-custom-gray rounded-md;
 }
