@@ -1,21 +1,30 @@
+//components
 import Image from 'next/image';
 import { Button } from './ui/button';
 
 const Explore = () => {
 	return (
-		<div className="border rounded-2xl overflow-hidden">
+		<div className="border rounded-2xl overflow-hidde my-12">
 			<a href="/">
 				<div className="relative">
 					<Image
-						src="/explore.png"
+						src="/old-bagan.jpg"
 						alt="explore 5 random countries"
-						layout="fill"
-						objectFit="cover"
+						width={2000}
+						height={500}
+						className="rounded-xl h-[400px]"
 					/>
-					<div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center p-6 text-white">
-						<p className="text-lg">Can&apos;t decide where to go?</p>
-						<h2 className="text-6xl font-bold">Explore 5 random countries</h2>
-						<Button className="bg-white text-black">Explore</Button>
+					<div className="absolute top-0 left-0 w-1/2 h-full p-6 text-white flex flex-col justify-center">
+						<p className="text-lg py-1">Can&apos;t decide where to go?</p>
+						<h2 className="text-5xl font-bold pb-10">
+							Explore 5 random countries
+						</h2>
+						<Button
+							variant="outline"
+							className="text-black font-bold text-center w-20"
+						>
+							Explore
+						</Button>
 					</div>
 				</div>
 			</a>

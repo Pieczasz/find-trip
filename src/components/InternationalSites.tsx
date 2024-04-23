@@ -8,7 +8,7 @@ import {
 
 const InternationalSites = () => {
 	return (
-		<div className="w-full mt-10">
+		<div className="w-full my-12">
 			<Accordion type="single" collapsible>
 				<AccordionItem value="item-1">
 					<AccordionTrigger className="text-xl">

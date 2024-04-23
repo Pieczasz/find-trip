@@ -1,3 +1,4 @@
+//components
 import Inputs from './Inputs';
 import MaxWidthWrapper from './MaxWidthWrapper';
 import Nav from './Nav';

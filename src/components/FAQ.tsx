@@ -8,7 +8,7 @@ import {
 
 const FAQ = () => {
 	return (
-		<div className="flex justify-center items-left w-full flex-col">
+		<div className="flex justify-center items-left w-full flex-col my-12">
 			<h3 className="pb-2 text-2xl font-bold">Booking flights with FindTrip</h3>
 			<div className="flex gap-6 w-full">
 				<div className="w-1/2">
