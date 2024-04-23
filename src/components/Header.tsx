@@ -5,7 +5,7 @@ import Nav from './Nav';
 
 const Header = () => {
 	return (
-		<header className="bg-blue-950 text-white">
+		<header className="text-white">
 			<Nav />
 			<div className="flex justify-center items-left w-full">
 				<MaxWidthWrapper>

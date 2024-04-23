@@ -4,12 +4,14 @@ import { Label } from './ui/label';
 
 const Inputs = () => {
 	return (
-		<div className="flex gap-1 pb-10 w-full flex-wrap">
-			<Input type="text" className="w-30" id="fromWhere" />
-			<Input type="text" className="w-30" id="howManyCountries" />
-			<Input type="text" className="w-30" id="depart" />
-			<Input type="text" className="w-30" id="return" />
-			<Input type="text" className="w-30" id="travelersInfo" />
+		<div className="flex gap-1 pb-10 w-full flex-wrap justify-between">
+			<div className="flex flex-wrap gap-1 w-30">
+				<Input type="text" id="fromWhere" className="w-30" />
+				<Input type="text" id="howManyCountries" className="w-30" />
+				<Input type="text" id="depart" className="w-30" />
+				<Input type="text" id="return" className="w-30" />
+				<Input type="text" id="travelersInfo" className="w-30" />
+			</div>
 			<Button>Search</Button>
 		</div>
 	);
