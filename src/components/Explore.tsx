@@ -15,7 +15,9 @@ const Explore = () => {
 						className="rounded-xl h-[400px]"
 					/>
 					<div className="absolute top-0 left-0 w-1/2 h-full p-6 text-white flex flex-col justify-center">
-						<p className="text-lg py-1">Can&apos;t decide where to go?</p>
+						<p className="text-sm font-bold py-1">
+							Can&apos;t decide where to go?
+						</p>
 						<h2 className="text-5xl font-bold pb-10">
 							Explore 5 random countries
 						</h2>

@@ -20,7 +20,7 @@ const Nav = () => {
 					/>
 				</Link>
 			</div>
-			<div className="flex gap-6 items-center p-6">
+			<div className="flex gap-4 items-center p-6">
 				<FaRegFlag className="icon" />
 				<FaRegHeart className="icon" />
 				<MdOutlineAccountCircle className="icon" />
