@@ -5,18 +5,18 @@ import { Input } from './ui/input';
 const Inputs = () => {
 	return (
 		<div className="flex gap-1 pb-10 w-full flex-wrap justify-between">
-			<div className="flex flex-wrap gap-1 w-30">
+			<div className="flex flex-wrap gap-1">
 				<SearchButton
 					info="From"
 					placeholder="Country, city or airport"
 					classNameInput="rounded-r-none"
 				/>
-				<SearchButton />
-				<SearchButton />
-				<SearchButton />
+				<SearchButton classNameInput="rounded-none" />
+				<SearchButton classNameInput="rounded-none" />
+				<SearchButton classNameInput="rounded-none" />
 				<SearchButton classNameInput="rounded-l-none" />
 			</div>
-			<Button>Search</Button>
+			<Button className="h-[69px]">Search</Button>
 		</div>
 	);
 };

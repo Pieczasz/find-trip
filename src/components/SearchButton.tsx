@@ -21,14 +21,17 @@ const SearchButton: React.FC<SearchButtonProps> = ({
 			<Label className="block w-full">
 				<div className="flex items-start w-full relative">
 					{info && (
-						<span className="absolute font-bold text-gray-500 pl-3 pt-3">
+						<span className="absolute font-bold text-gray-500 pl-3 pt-4">
 							{info}
 						</span>
 					)}
 					<div className="flex flex-col w-full">
 						<Input
 							type="text"
-							className={cn('flex-grow pt-10 pb-5 pl-3', classNameInput)}
+							className={cn(
+								'w-[202px] h-[69px] flex-grow pt-10 pb-6 pl-3',
+								classNameInput
+							)}
 							placeholder={placeholder}
 						/>
 					</div>
