@@ -1,36 +1,48 @@
 import React from 'react';
 import { Label } from './ui/label';
 import { Input } from './ui/input';
-import { Button } from './ui/button';
+import { cn } from '@/lib/utils';
 
 interface SearchButtonProps {
 	info?: string;
 	placeholder?: string;
 	icon?: React.ReactNode;
+	classNameInput?: string;
 }
 
 const SearchButton: React.FC<SearchButtonProps> = ({
 	info,
 	placeholder,
 	icon,
+	classNameInput,
 }) => {
 	return (
 		<div>
 			<Label className="block w-full">
-				<div className="w-4/5 h-3/5 relative">
-					<div className="flex flex-col">
-						{info && (
-							<span className="font-bold text-gray-500 absolute top-0 left-0 pl-2">
-								{info}
-							</span>
-						)}
-						<Input type="text" className=" pl-2" placeholder={placeholder} />
+				<div className="flex items-start w-full relative">
+					{info && (
+						<span className="absolute font-bold text-gray-500 pl-3 pt-3">
+							{info}
+						</span>
+					)}
+					<div className="flex flex-col w-full">
+						<Input
+							type="text"
+							className={cn('flex-grow pt-10 pb-5 pl-3', classNameInput)}
+							placeholder={placeholder}
+						/>
 					</div>
-					<div className="w-8 h-8 md:hidden">{icon}</div>
+					<div className="w-12 h-12 md:w-8 md:h-8 absolute top-0 right-0">
+						{icon}
+					</div>
 				</div>
 			</Label>
 		</div>
 	);
+};
+
+SearchButton.defaultProps = {
+	placeholder: '',
 };
 
 export default SearchButton;
